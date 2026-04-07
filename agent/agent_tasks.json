@@ -1,0 +1,55 @@
+{
+  "agent": "Waechter",
+  "version": "1.0",
+  "created": "2026-04-07",
+  "owner": "Udo Sassik",
+  "tasks": [
+    {
+      "id": "T001",
+      "name": "Pflichtdateien pruefen",
+      "type": "file_check",
+      "priority": "HOCH",
+      "status": "aktiv",
+      "targets": [
+        "C:\\Users\\USass\\Billi_Bilder\\agent\\agent_tasks.json",
+        "C:\\Users\\USass\\Billi_Bilder\\agent\\agent_soul.md",
+        "C:\\Users\\USass\\Billi_Bilder\\SHARED_BRAIN\\RULES.md",
+        "C:\\Users\\USass\\Billi_Bilder\\SHARED_BRAIN\\MEMORY.md"
+      ]
+    },
+    {
+      "id": "T002",
+      "name": "Report_Agent Excel pruefen",
+      "type": "excel_check",
+      "priority": "HOCH",
+      "status": "aktiv",
+      "targets": [
+        "C:\\Users\\USass\\Report_Agent\\"
+      ],
+      "expected_extensions": [".xlsx", ".xls"],
+      "min_files": 1
+    },
+    {
+      "id": "T003",
+      "name": "PM Tool Module pruefen",
+      "type": "file_check",
+      "priority": "MITTEL",
+      "status": "aktiv",
+      "targets": [
+        "C:\\Users\\USass\\Billi_Bilder\\PM_Tool\\core\\charter_generator.py",
+        "C:\\Users\\USass\\Billi_Bilder\\PM_Tool\\core\\canvas_generator.py",
+        "C:\\Users\\USass\\Billi_Bilder\\PM_Tool\\core\\gantt_generator.py",
+        "C:\\Users\\USass\\Billi_Bilder\\PM_Tool\\ai\\pm_assistant.py",
+        "C:\\Users\\USass\\Billi_Bilder\\PM_Tool\\main.py"
+      ]
+    },
+    {
+      "id": "T004",
+      "name": "MEMORY.md Update",
+      "type": "memory_write",
+      "priority": "MITTEL",
+      "status": "aktiv",
+      "target": "C:\\Users\\USass\\Billi_Bilder\\SHARED_BRAIN\\MEMORY.md"
+    }
+  ]
+}
